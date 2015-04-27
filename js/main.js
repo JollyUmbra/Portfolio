@@ -3,7 +3,7 @@ $(document).ready(function()
     // Script for paralax in header image
     var scrollPos = $(this).scrollTop();
     var fadeStart = 0;
-    var fadeUntil = $('#content').offset().top + 50;
+    var fadeUntil = $('#content').offset().top;
     console.log(fadeUntil);
     $(this).scroll(function()
     {
