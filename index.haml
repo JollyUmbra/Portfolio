@@ -1,0 +1,62 @@
+!!! 5
+%html
+    %head
+        %title Michael Wood  |  Front-end Web Developer  |  Digital Artist
+        %meta{:content=>"Portfolio of Michael Wood", :name=> "description"}/
+        %meta{:content=>"Michael Wood", :name=>"author"}/
+        %meta{:content=>"digital art, art, portfolio, web design, web development, design, development, programming, Michael Wood", :name=>"keywords"}/
+        %meta{:content=>"width=device-width, initial-scale=1", :name=>"viewport"}/
+        %link{:href=>"stylesheets/styles.css", :rel=>"stylesheet", :type=>"text/css"}/
+        %link{:href=>"http://fonts.googleapis.com/css?family=Oswald|Roboto", :rel=>"stylesheet", :type=>"text/css"}/
+        %script{:src=>"js/jquery-1.11.2.min.js"}
+        %script{:src=>"js/main.js"}
+
+    %body
+        %header
+            %canvas#headerCanvas
+            #hero
+                %img#portrait{:src=>"img/Michael-Wood.jpg", :alt=>"Michael Wood Front End Web Developer"}/
+                %h1 Michael Wood
+                %h2 Front-End Web Developer
+                %h3 Digital Artist
+                .social
+                    %a{:href => "https://www.linkedin.com/in/michaelwood7", :target => "_blank"}
+                        %img{:alt => "Michael on LinkedIn", :src => "img/social/linkedin.png"}/
+                    %a{:href => "http://codepen.io/mwooddesigns", :target => "_blank"}
+                        %img{:alt => "Michael on Codepen", :src => "img/social/codepen.png"}/
+                    %a{:href => "https://github.com/JollyUmbra", :target => "_blank"}
+                        %img{:alt => "Michael on Github", :src => "img/social/github.png"}/
+                    %a{:href => "mailto:mwooddesigns@gmail.com", :target => "_blank"}
+                        %img{:alt => "Send Michael an email", :src => "img/social/email.png"}/
+        #content
+            .container
+                %h1#about About Me
+                .sideBySide
+                    .left
+                        %h2 Who am I?
+                        %p I am a Front-end Developer located in the central Florida area after just completing my Bachelor of Arts degree in Digital Arts from Stetson University. I have a passion for improving my skills in both design and development, and love finding unique and creative ways to use code to create a beautiful user experience.  In my spare time, I enjoy reading a good book, playing video games, playing my bass guitar, and learning as much as I can about web development.
+                    .right
+                        %h2 What do I do?
+                        %p My primary interest is in Front-end development. I am well-verses in HTML(HAML), CSS(SCSS), Javascript, jQuery, and php. I have also dabbled in writing svg. I am constantly looking for inspiration for good websites and  user experiences. I spend most of my idle time on CodePen playing with code or looking for new ideas to improve my own design skills. As well as web design, I also enjoy using programming for the creation of art to creative generative or interactive works that can be different every time they're viewed.
+                %h1#portfolio.clear My Work
+                %h2 Web Design and Development
+                %h3 Water Scarcity Awareness Website
+                %a{:href=>"http://galatea.stetson.edu/~mwood/ScarceSupply/", :target=>"_blank"}
+                    %img{:src=>"img/water-scarcity.jpg", :alt=>"A website promoting water scarcity awareness"}/
+                %p This project was my first attempt at a complete website with advanced features without the use of any external frameworks. Also, served as a way to put new web design techniques, such as flexbox layout, to the test. This site was made to interact with a physical installation that served to illustrate the problem.
+        .spacer
+
+        #contact
+            .container
+                %h1#contact Let's Work Together
+                %h3#contact-msg Or just say hello!
+                #contact-area
+                    %form{:action=>"contact.php", :method=>"post"}
+                        %label{:for=>"Name"} Name:
+                        %input#Name{:name=>"Name", :type=>"text"}/
+                        %label{:for=>"Email"} Email:
+                        %input#Email{:name=>"Email", :type=>"text"}/
+                        %label{:for=>"Message"} Message:
+                        %textarea#Message{:name=>"Message", :cols=>"20", :row=>"20"}
+                        %input.submit-button{:name=>"submit", :type=>"submit", :value=>"Submit"}/
+        .spacer#last
