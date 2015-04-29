@@ -6,6 +6,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    color: #fff;
 }
 
 h1, h2, h3, h4 {
@@ -55,7 +56,7 @@ header {
     #headerCanvas {
         position: absolute;
         z-index: 1;
-        opacity: 0.25;
+        opacity: 0.5;
     }
 
     #hero {
@@ -73,18 +74,49 @@ header {
         .social {
             text-align: center;
             margin-top: 1em;
+            margin: 0 auto;
+            display: block;
+            height: 32px;
+            width: 100%;
 
-            img {
-                margin-left: 5px;
-                margin-right: 5px;
-                -webkit-filter: brightness(50%);
-                filter: brightness(50%);
-                -webkit-transition: all .2s linear;
-                transition: all .2s linear;
+            .icons {
+                margin: 0 auto;
+                text-align: center;
 
-                &:hover {
-                    -webkit-filter: brightness(120%);
-                    filter: brightness(120%);
+                div {
+                    float: left;
+                    margin:0 5px;
+                    text-align: center;
+                    text-indent:-9999px;
+                    height: 32px;
+                    width: 32px;
+                    -webkit-filter: brightness(50%);
+                    filter: brightness(50%);
+                    -webkit-transition: all .2s linear;
+                    transition: all .2s linear;
+                    background-image: url("../img/social.png");
+                    background-repeat: no-repeat;
+
+                    &:hover {
+                        -webkit-filter: brightness(120%);
+                        filter: brightness(120%);
+                    }
+                }
+
+                #linkedIn {
+                    background-position: 0px 0px;
+                }
+
+                #codepen {
+                    background-position: 0px -33px;
+                }
+
+                #github {
+                    background-position: 0px -66px;
+                }
+
+                #email {
+                    background-position: 0px -99px;
                 }
             }
         }
@@ -103,7 +135,7 @@ header {
 // Begin body styles
 #content, #contact {
     position: relative;
-    background: #fff;
+    background: #333;
     height: auto;
     width: 100%;
     margin-top: 60%;
@@ -155,7 +187,7 @@ header {
                 font-family: "Roboto", sans-serif;
                 font-size: 1.4em;
                 margin: 0 0 10px 0;
-                border: 2px solid #000;
+                border: 2px solid #fff;
             }
 
             textarea {
@@ -169,15 +201,16 @@ header {
                 align-text: center;
                 margin: 20px auto 0;
                 display: block;
-                border: 0 solid #000;
-                background-color: #000;
-                color: #fff;
+                border: 0 solid #fff;
+                background-color: #fff;
+                color: #000;
                 font-family: "Oswald", sans-serif;
                 font-size: 2em;
                 transition: all .2s linear;
 
                 &:hover {
                     background-color: $defaultBG;
+                    color: #fff;
                 }
             }
         }
