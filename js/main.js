@@ -37,7 +37,7 @@ $(document).ready(function()
     var time = 1;
     var dt = 0.1;
     var hue = 0;
-    var speed = 7;
+    var speed = 2;
     var currentColor = 'hsla(' + hue + ', 100%, 50%, 1)';
 
     var lines = [];
