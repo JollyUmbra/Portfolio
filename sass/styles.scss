@@ -11,11 +11,12 @@ body, html {
 
 h1, h2, h3, h4 {
     font-family: "Oswald", sans-serif;
-    margin:0 0 20px;
+    margin:0 0 25px;
 }
 
 p {
     font-family: "Roboto", serif;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -23,11 +24,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 h4 {
@@ -37,6 +38,8 @@ h4 {
 img {
     height: auto;
     max-width: 100%;
+    display: block;
+    margin: 10px auto 20px auto;
 }
 
 .clear {
@@ -80,10 +83,19 @@ header {
             width: 100%;
 
             .icons {
+                width: 168px;
+                height: 32px;
                 margin: 0 auto;
+                display: block;
                 text-align: center;
 
+                a {
+                    text-align: center;
+                    width: 32px;
+                }
+
                 div {
+                    display: block;
                     float: left;
                     margin:0 5px;
                     text-align: center;
@@ -127,6 +139,7 @@ header {
             border-radius: 50%;
             height: 150px;
             width: 150px;
+            box-shadow: 0 0 10px #000;
         }
     }
 }
@@ -156,6 +169,24 @@ header {
             padding-top: 50px;
         }
 
+        p {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .sideBySide {
+
+            p {
+                text-align: left;
+            }
+
+            h2 {
+                margin: 0;
+            }
+        }
+
+
+
         #contact {
             margin: 0 auto 0;
         }
@@ -163,7 +194,7 @@ header {
         #contact-msg  {
             text-align: center;
             width: 100%;
-            margin: 0 auto 50px;
+            margin: 0 auto 20px;
         }
 
         #contact-area {
@@ -196,8 +227,8 @@ header {
             }
 
             .submit-button {
-                width: 50%;
-                height: 100px;
+                width: 25%;
+                height: 50px;
                 align-text: center;
                 margin: 20px auto 0;
                 display: block;
@@ -205,7 +236,7 @@ header {
                 background-color: #fff;
                 color: #000;
                 font-family: "Oswald", sans-serif;
-                font-size: 2em;
+                font-size: 1em;
                 transition: all .2s linear;
 
                 &:hover {
@@ -213,11 +244,6 @@ header {
                     color: #fff;
                 }
             }
-        }
-
-        p {
-            width: 100%;
-            margin: 25px auto;
         }
 
         .sideBySide {
@@ -251,6 +277,14 @@ header {
     margin-top: 0;
 }
 // End body styles
+
+// Begin media queries
+@media screen and (max-width: 700px) {
+    .submit-button {
+        width: 100%;
+    }
+}
+// End media queries
 
 // Begin animation styles
 @-webkit-keyframes dropIn {

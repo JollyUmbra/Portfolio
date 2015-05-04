@@ -23,16 +23,12 @@
                     .icons
                         %a{:href => "https://www.linkedin.com/in/michaelwood7", :target => "_blank"}
                             #linkedIn Linkedin
-                            -#%img{:alt => "Michael on LinkedIn", :src => "img/social/linkedin.png"}/
                         %a{:href => "http://codepen.io/mwooddesigns", :target => "_blank"}
                             #codepen Codepen
-                            -#%img{:alt => "Michael on Codepen", :src => "img/social/codepen.png"}/
                         %a{:href => "https://github.com/JollyUmbra", :target => "_blank"}
                             #github Github
-                            -#%img{:alt => "Michael on Github", :src => "img/social/github.png"}/
                         %a{:href => "mailto:mwooddesigns@gmail.com", :target => "_blank"}
                             #email Email
-                            -#%img{:alt => "Send Michael an email", :src => "img/social/email.png"}/
         #content
             .container
                 %h1#about About Me
@@ -45,10 +41,29 @@
                         %p My primary interest is in Front-end development. I am well-verses in HTML5(HAML), CSS(SCSS), Javascript(Coffeescript), jQuery, and php. I have also dabbled in writing svg. I am constantly looking for inspiration for good websites and  user experiences. I spend most of my idle time on CodePen playing with code or looking for new ideas to improve my own design skills. As well as web design, I also enjoy using programming for the creation of art to creative generative or interactive works that can be different every time they're viewed.
                 %h1#portfolio.clear My Work
                 %h2 Web Design and Development
-                %h3 Water Scarcity Awareness Website
+                %h3.clear Water Scarcity Awareness Website
                 %a{:href=>"http://galatea.stetson.edu/~mwood/ScarceSupply/", :target=>"_blank"}
                     %img{:src=>"img/water-scarcity.jpg", :alt=>"A website promoting water scarcity awareness"}/
                 %p This project was my first attempt at a complete website with advanced features without the use of any external frameworks. Also, served as a way to put new web design techniques, such as flexbox layout, to the test. This site was made to interact with a physical installation that served to illustrate the problem.
+                %h3 Canvas Experiments
+                %a{:href=>"http://codepen.io/mwooddesigns/full/dobLeO/", :target=>"_blank"}
+                    %img{:src=>"img/CanvasTrig.png", :alt=>"Canvas Trig experimentation"}/
+                %p A codepen pen exploring the use of trigonometry for the use of cyclical drawing and animation using the javascript canvas library. This was developed as practice with the javascript canvas library.
+                %a{:href=>"http://codepen.io/mwooddesigns/full/dobmQb/", :target=>"_blank"}
+                    %img{:src=>"img/ParticleDecay.png", :alt=>"Canvas particle experimentation"}/
+                %p A codepen pen I developed to explore the use of basic physics for animation using the javscript canvas library. This was developed as practice with the javascript canvas library.
+                %a{:href=>"http://codepen.io/mwooddesigns/full/WbORjM/", :target=>"_blank"}
+                    %img{:src=>"img/CanvasGraph.png", :alt=>"Animated pi graph created with javascript canvas"}/
+                %p A codepen pen I developed as a way to practice with the javascript canvas library and to explore the use of canvas to create clean animated graphs.
+                %h2 Generative Art/Creative Coding Projects
+                %h3 Life's a Glitch series
+                %a{:href=>"img/LifesAGlitch.jpg", :target=>"_blank"}
+                    %img{:src=>"img/LifesAGlitch.jpg", :alt=>"Life's a Glitch series by Michael Wood"}/
+                %p Life's a Glitch is a series that seeks to reveal the beauty of every day life even in the most mundane tasks. I wrote a program in the Processing programming environment that receives motion tracking data from Max/MSP. It uses this data to draw generate an image based on the motion of the user. I then took the generated images and did a technique called databending using an audio editing program call Audacity. The first image was generated with a video of driving. The second is an image of me folding laundry. And the last image is an image of me eating dinner.
+                %h3 RGBCubism
+                %a{:href=>"img/RGBCubism.jpg", :target=>"_blank"}
+                    %img{:src=>"img/RGBCubism.jpg", :alt=>"RGBCubism series by Michael Wood"}/
+                %p RGBCubism is a response to Cubist landscape compositions. I was tasked with combining both a classic and modern technique. I wrote a Proccessing sketch that uses OpenGL to render 3D cubes to create the different compositions and choose a color scheme for each image.
         .spacer
 
         #contact
