@@ -6,10 +6,13 @@
         %meta{:content=>"Michael Wood", :name=>"author"}/
         %meta{:content=>"digital art, art, portfolio, web design, web development, design, development, programming, Michael Wood", :name=>"keywords"}/
         %meta{:content=>"width=device-width, initial-scale=1", :name=>"viewport"}/
-        %link{:href=>"stylesheets/styles.css", :rel=>"stylesheet", :type=>"text/css"}/
-        %link{:href=>"http://fonts.googleapis.com/css?family=Oswald|Roboto", :rel=>"stylesheet", :type=>"text/css"}/
-        %script{:src=>"js/jquery-1.11.2.min.js"}
-        %script{:src=>"js/main.js"}
+        %link{:href=>"stylesheets/styles.css", :rel=>"stylesheet", :media=>"none", :onload=>"if(media!='all')media='all'", :type=>"text/css"}/
+        %link{:href=>"http://fonts.googleapis.com/css?family=Oswald|Roboto", :rel=>"stylesheet", :media=>"none", :onload=>"if(media!='all')media='all'", :type=>"text/css"}/
+        %noscript
+            %link{:href=>"stylesheets/styles.css", :rel=>"stylesheet", :type=>"text/css"}/
+            %link{:href=>"http://fonts.googleapis.com/css?family=Oswald|Roboto", :rel=>"stylesheet", :type=>"text/css"}/
+        %script{:async=>"", :src=>"js/jquery-1.11.2.min.js"}
+        %script{:async=>"", :src=>"js/main.js"}
 
     %body
         %header
@@ -63,7 +66,12 @@
                 %h3 RGBCubism
                 %a{:href=>"img/RGBCubism.jpg", :target=>"_blank"}
                     %img{:src=>"img/RGBCubism.jpg", :alt=>"RGBCubism series by Michael Wood"}/
-                %p RGBCubism is a response to Cubist landscape compositions. I was tasked with combining both a classic and modern technique. I wrote a Proccessing sketch that uses OpenGL to render 3D cubes to create the different compositions and choose a color scheme for each image.
+                %p RGBCubism is a response to Cubist landscape compositions made for my Advanced Open Studio course. I was tasked with combining both a classic and modern technique. I wrote a Proccessing sketch that uses OpenGL to render 3D cubes to create the different compositions and choose a color scheme for each image.
+                %h3 Processing Visual Experiments
+                .videos
+                    %iframe{:src=>"https://player.vimeo.com/video/126075587", :width=>"500", :height=>"281", :frameborder=>"0", :webkitallowfullscreen=>"", :mozallowfullscreen=>"", :allowfullscreen=>""}
+                    %iframe{:src=>"https://player.vimeo.com/video/126076417", :width=>"500", :height=>"281", :frameborder=>"0", :webkitallowfullscreen=>"", :mozallowfullscreen=>"", :allowfullscreen=>""}
+                %p Visual experiments using Processing to learn the math associated in basic animation to be later implemented in Javascript. This was a response to a prompt given in my Advanced Open Studio class.
         .spacer
 
         #contact

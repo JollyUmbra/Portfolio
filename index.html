@@ -6,10 +6,14 @@
     <meta content='Michael Wood' name='author'>
     <meta content='digital art, art, portfolio, web design, web development, design, development, programming, Michael Wood' name='keywords'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link href='stylesheets/styles.css' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oswald|Roboto' rel='stylesheet' type='text/css'>
-    <script src='js/jquery-1.11.2.min.js'></script>
-    <script src='js/main.js'></script>
+    <link href='stylesheets/styles.css' media='none' onload="if(media!='all')media='all'" rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Roboto' media='none' onload="if(media!='all')media='all'" rel='stylesheet' type='text/css'>
+    <noscript>
+      <link href='stylesheets/styles.css' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Oswald|Roboto' rel='stylesheet' type='text/css'>
+    </noscript>
+    <script async='' src='js/jquery-1.11.2.min.js'></script>
+    <script async='' src='js/main.js'></script>
   </head>
   <body>
     <header>
@@ -80,7 +84,13 @@
         <a href='img/RGBCubism.jpg' target='_blank'>
           <img alt='RGBCubism series by Michael Wood' src='img/RGBCubism.jpg'>
         </a>
-        <p>RGBCubism is a response to Cubist landscape compositions. I was tasked with combining both a classic and modern technique. I wrote a Proccessing sketch that uses OpenGL to render 3D cubes to create the different compositions and choose a color scheme for each image.</p>
+        <p>RGBCubism is a response to Cubist landscape compositions made for my Advanced Open Studio course. I was tasked with combining both a classic and modern technique. I wrote a Proccessing sketch that uses OpenGL to render 3D cubes to create the different compositions and choose a color scheme for each image.</p>
+        <h3>Processing Visual Experiments</h3>
+        <div class='videos'>
+          <iframe allowfullscreen='' frameborder='0' height='281' mozallowfullscreen='' src='https://player.vimeo.com/video/126075587' webkitallowfullscreen='' width='500'></iframe>
+          <iframe allowfullscreen='' frameborder='0' height='281' mozallowfullscreen='' src='https://player.vimeo.com/video/126076417' webkitallowfullscreen='' width='500'></iframe>
+        </div>
+        <p>Visual experiments using Processing to learn the math associated in basic animation to be later implemented in Javascript. This was a response to a prompt given in my Advanced Open Studio class.</p>
       </div>
     </div>
     <div class='spacer'></div>
