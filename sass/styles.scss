@@ -7,6 +7,11 @@ body, html {
     padding: 0;
     height: 100%;
     color: #fff;
+    background-color: $defaultBG;
+
+    &.contact-results {
+        overflow: hidden;
+    }
 }
 
 h1, h2, h3, h4 {
@@ -160,6 +165,7 @@ header {
         width: 75%;
         overflow: hidden;
         margin: 0 auto;
+        margin-bottom: 50px;
 
         h1 {
             text-align: center;
@@ -168,9 +174,14 @@ header {
             padding-top: 50px;
         }
 
+        img {
+            margin: 0;
+        }
+
         p {
-            text-align: center;
+            text-align: left;
             margin-bottom: 100px;
+            font-size: 1.2em;
             clear: both;
         }
 
@@ -272,8 +283,6 @@ header {
                 width: 47%;
             }
         }
-
-        margin-bottom: 50px;
     }
 }
 
@@ -291,6 +300,36 @@ header {
 #contact {
     margin-top: 0;
 }
+
+#thank-you {
+    width: 100%;
+    margin-top: 10%;
+    margin-top: 20vh;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    a {
+        color: #333;
+        transition: color .3s linear;
+
+        &:visited {
+            color:#333;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+
+    }
+}
 // End body styles
 
 // Begin animation styles
@@ -307,8 +346,22 @@ header {
 
 // Begin media queries
 @media screen and (max-width: 700px) {
+    .container {
+        width: 90%!important;
+    }
+
     .submit-button {
         width: 100%!important;
+    }
+
+    .left {
+        clear: both;
+        width: 100%!important;
+    }
+
+    .right {
+        clear: both;
+        width:100%!important;
     }
 
     iframe {

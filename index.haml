@@ -11,8 +11,8 @@
         %noscript
             %link{:href=>"stylesheets/styles.css", :rel=>"stylesheet", :type=>"text/css"}/
             %link{:href=>"http://fonts.googleapis.com/css?family=Oswald|Roboto", :rel=>"stylesheet", :type=>"text/css"}/
-        %script{:async=>"", :src=>"js/jquery-1.11.2.min.js"}
-        %script{:async=>"", :src=>"js/main.js"}
+        %script{:src=>"js/jquery-1.11.2.min.js"}
+        %script{:src=>"js/main.js"}
 
     %body
         %header
@@ -79,12 +79,12 @@
                 %h1#contact Let's Work Together
                 %h3#contact-msg Or just say hello!
                 #contact-area
-                    %form{:action=>"contact.php", :method=>"post"}
+                    %form{:action=>"thank-you.php", :method=>"post"}
                         %label{:for=>"Name"} Name:
-                        %input#Name{:name=>"Name", :type=>"text"}/
+                        %input#Name{:name=>"name", :type=>"text"}/
                         %label{:for=>"Email"} Email:
-                        %input#Email{:name=>"Email", :type=>"text"}/
+                        %input#Email{:name=>"email", :type=>"text"}/
                         %label{:for=>"Message"} Message:
-                        %textarea#Message{:name=>"Message", :cols=>"20", :row=>"20"}
+                        %textarea#Message{:name=>"message", :cols=>"20", :row=>"20"}
                         %input.submit-button{:name=>"submit", :type=>"submit", :value=>"Submit"}/
         .spacer#last
