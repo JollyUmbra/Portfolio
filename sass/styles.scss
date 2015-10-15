@@ -1,5 +1,5 @@
 // Variables
-$defaultBG: #6590dc;
+$defaultBG: #3783A7;
 
 // Begin default styles
 body, html {
@@ -43,7 +43,6 @@ h4 {
 img {
     height: auto;
     max-width: 100%;
-    display: block;
     margin: 10px auto 20px auto;
 }
 
@@ -51,6 +50,12 @@ img {
     clear: both;
 }
 // End default styles
+
+// General styles
+
+
+
+// End general styles
 
 // Begin header styles
 header {
@@ -115,8 +120,8 @@ header {
                     background-repeat: no-repeat;
 
                     &:hover {
-                        -webkit-filter: brightness(120%);
-                        filter: brightness(120%);
+                        -webkit-filter: brightness(100%);
+                        filter: brightness(100%);
                     }
                 }
 
@@ -144,7 +149,6 @@ header {
             border-radius: 50%;
             height: 150px;
             width: 150px;
-            box-shadow: 0 0 10px #000;
         }
     }
 }
@@ -202,6 +206,11 @@ header {
 
         .sideBySide {
 
+            width:100%;
+            overflow: hidden;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
             p {
                 text-align: left;
             }
@@ -209,9 +218,21 @@ header {
             h2 {
                 margin: 0;
             }
+
+            .left {
+                float: left;
+                width: 47%;
+            }
+
+            .right {
+                float: right;
+                width: 47%;
+            }
         }
 
-
+        .sideBySide.trim {
+            margin-bottom: 0;
+        }
 
         #contact {
             margin: 0 auto 0;
@@ -269,18 +290,6 @@ header {
                     background-color: $defaultBG;
                     color: #fff;
                 }
-            }
-        }
-
-        .sideBySide {
-            .left {
-                float: left;
-                width: 47%;
-            }
-
-            .right {
-                float: right;
-                width: 47%;
             }
         }
     }
@@ -345,7 +354,7 @@ header {
 // End animation styles
 
 // Begin media queries
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .container {
         width: 90%!important;
     }
