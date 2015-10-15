@@ -13,6 +13,25 @@
             %link{:href=>"http://fonts.googleapis.com/css?family=Oswald|Roboto", :rel=>"stylesheet", :type=>"text/css"}/
         %script{:src=>"js/jquery-1.11.2.min.js"}
         %script{:src=>"js/main.js"}
+        %link{:href => "/apple-touch-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}/
+        %link{:href => "/apple-touch-icon-60x60.png", :rel => "apple-touch-icon", :sizes => "60x60"}/
+        %link{:href => "/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+        %link{:href => "/apple-touch-icon-76x76.png", :rel => "apple-touch-icon", :sizes => "76x76"}/
+        %link{:href => "/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+        %link{:href => "/apple-touch-icon-120x120.png", :rel => "apple-touch-icon", :sizes => "120x120"}/
+        %link{:href => "/apple-touch-icon-144x144.png", :rel => "apple-touch-icon", :sizes => "144x144"}/
+        %link{:href => "/apple-touch-icon-152x152.png", :rel => "apple-touch-icon", :sizes => "152x152"}/
+        %link{:href => "/apple-touch-icon-180x180.png", :rel => "apple-touch-icon", :sizes => "180x180"}/
+        %link{:href => "/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
+        %link{:href => "/android-chrome-192x192.png", :rel => "icon", :sizes => "192x192", :type => "image/png"}/
+        %link{:href => "/favicon-96x96.png", :rel => "icon", :sizes => "96x96", :type => "image/png"}/
+        %link{:href => "/favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
+        %link{:href => "/manifest.json", :rel => "manifest"}/
+        %link{:color => "#5bbad5", :href => "/safari-pinned-tab.svg", :rel => "mask-icon"}/
+        %meta{:content => "#da532c", :name => "msapplication-TileColor"}/
+        %meta{:content => "/mstile-144x144.png", :name => "msapplication-TileImage"}/
+        %meta{:content => "#ffffff", :name => "theme-color"}/
+
 
     %body
         %header
@@ -47,9 +66,31 @@
                 %h1#portfolio.clear My Work
                 %h2 Web Design and Development
 
+                %h3.clear Wordpress Site Development
+                %p.trim Websites that I have developed for while developing for M5Design Studio.
                 .sideBySide
                     .left
-                        %h3.clear Water Scarcity Awareness Website
+                        %a{:href=>"http://clinicallyspeaking.net/", :target=>"_blank"}
+                            %img{:src=>"img/ClinicallySpeaking.jpg", :alt=>"A client of M5Design Studio"}/
+                        %p For this site, I developed the wordpress theme and implemented easy backend content updating to ensure the client had an easy time maintaining their content.
+                    .right
+                        %a{:href=>"http://replayreport.com/", :target=>"_blank"}
+                            %img{:src=>"img/ReplayReport.jpg", :alt=>"A client of M5Design Studio"}/
+                        %p I translated this client's old site into a wordpress site so they could more easily manage their content and include more advanced features more easily with the help of wordpress plugins.
+                .sideBySide
+                    .left
+                        %a{:href=>"http://primpfullsalon.com/", :target=>"_blank"}
+                            %img{:src=>"img/Primp.jpg", :alt=>"A client of M5Design Studio"}/
+                        %p This site implemented wordpress fields as a way to allow the client to easily maintain their price and service information in the backend very easily and quickly while still maintaining proper stylings.
+                    .right
+                        %a{:href=>"http://www.mannersmentor.com/", :target=>"_blank"}
+                            %img{:src=>"img/MannersMentor.jpg", :alt=>"A client of M5Design Studio"}/
+                        %p Another client website that I developed for using wordpress. This was my first time creating a wordpress theme from a design, and began the development of my skills with PHP.
+
+                %h3.clear Water Scarcity Awareness Website
+                .sideBySide
+                    .left
+
                         %a{:href=>"WaterScarcity/", :target=>"_blank"}
                             %img{:src=>"img/water-scarcity.jpg", :alt=>"A website promoting water scarcity awareness"}/
                         %p This project was my first attempt at a complete website with advanced features without the use of any external frameworks. Also, served as a way to put new web design techniques, such as flexbox layout, to the test. This site was made to interact with a physical installation that served to illustrate the problem.
@@ -80,11 +121,12 @@
                         %p Life's a Glitch is a series that seeks to reveal the beauty of every day life even in the most mundane tasks. I wrote a program in the Processing programming environment that receives motion tracking data from Max/MSP. It uses this data to draw generate an image based on the motion of the user. I then took the generated images and did a technique called databending using an audio editing program call Audacity. The first image was generated with a video of driving. The second is an image of me folding laundry. And the last image is an image of me eating dinner.
                 .sideBySide
                     .left
-                        %a{:href=>"img/RGBCubism.jpg", :target=>"_blank"}
-                            %img{:src=>"img/RGBCubism.jpg", :alt=>"RGBCubism series by Michael Wood"}/
-                    .right
                         %h3 RGBCubism
                         %p RGBCubism is a response to Cubist landscape compositions made for my Advanced Open Studio course. I was tasked with combining both a classic and modern technique. I wrote a Proccessing sketch that uses OpenGL to render 3D cubes to create the different compositions and choose a color scheme for each image.
+                    .right
+                        %a{:href=>"img/RGBCubism.jpg", :target=>"_blank"}
+                            %img{:src=>"img/RGBCubism.jpg", :alt=>"RGBCubism series by Michael Wood"}/
+
                 %h3 Processing Visual Experiments
                 .videos
                     %iframe{:src=>"https://player.vimeo.com/video/126075587", :width=>"500", :height=>"281", :frameborder=>"0", :webkitallowfullscreen=>"", :mozallowfullscreen=>"", :allowfullscreen=>""}

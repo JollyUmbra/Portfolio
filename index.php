@@ -14,6 +14,24 @@
     </noscript>
     <script src='js/jquery-1.11.2.min.js'></script>
     <script src='js/main.js'></script>
+    <link href='/apple-touch-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
+    <link href='/apple-touch-icon-60x60.png' rel='apple-touch-icon' sizes='60x60'>
+    <link href='/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='/apple-touch-icon-76x76.png' rel='apple-touch-icon' sizes='76x76'>
+    <link href='/apple-touch-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='/apple-touch-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'>
+    <link href='/apple-touch-icon-144x144.png' rel='apple-touch-icon' sizes='144x144'>
+    <link href='/apple-touch-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'>
+    <link href='/apple-touch-icon-180x180.png' rel='apple-touch-icon' sizes='180x180'>
+    <link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+    <link href='/android-chrome-192x192.png' rel='icon' sizes='192x192' type='image/png'>
+    <link href='/favicon-96x96.png' rel='icon' sizes='96x96' type='image/png'>
+    <link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+    <link href='/manifest.json' rel='manifest'>
+    <link color='#5bbad5' href='/safari-pinned-tab.svg' rel='mask-icon'>
+    <meta content='#da532c' name='msapplication-TileColor'>
+    <meta content='/mstile-144x144.png' name='msapplication-TileImage'>
+    <meta content='#ffffff' name='theme-color'>
   </head>
   <body>
     <header>
@@ -59,9 +77,39 @@
       <div class='container'>
         <h1 class='clear' id='portfolio'>My Work</h1>
         <h2>Web Design and Development</h2>
+        <h3 class='clear'>Wordpress Site Development</h3>
+        <p class='trim'>Websites that I have developed for while developing for M5Design Studio.</p>
         <div class='sideBySide'>
           <div class='left'>
-            <h3 class='clear'>Water Scarcity Awareness Website</h3>
+            <a href='http://clinicallyspeaking.net/' target='_blank'>
+              <img alt='A client of M5Design Studio' src='img/ClinicallySpeaking.jpg'>
+            </a>
+            <p>For this site, I developed the wordpress theme and implemented easy backend content updating to ensure the client had an easy time maintaining their content.</p>
+          </div>
+          <div class='right'>
+            <a href='http://replayreport.com/' target='_blank'>
+              <img alt='A client of M5Design Studio' src='img/ReplayReport.jpg'>
+            </a>
+            <p>I translated this client's old site into a wordpress site so they could more easily manage their content and include more advanced features more easily with the help of wordpress plugins.</p>
+          </div>
+        </div>
+        <div class='sideBySide'>
+          <div class='left'>
+            <a href='http://primpfullsalon.com/' target='_blank'>
+              <img alt='A client of M5Design Studio' src='img/Primp.jpg'>
+            </a>
+            <p>This site implemented wordpress fields as a way to allow the client to easily maintain their price and service information in the backend very easily and quickly while still maintaining proper stylings.</p>
+          </div>
+          <div class='right'>
+            <a href='http://www.mannersmentor.com/' target='_blank'>
+              <img alt='A client of M5Design Studio' src='img/MannersMentor.jpg'>
+            </a>
+            <p>Another client website that I developed for using wordpress. This was my first time creating a wordpress theme from a design, and began the development of my skills with PHP.</p>
+          </div>
+        </div>
+        <h3 class='clear'>Water Scarcity Awareness Website</h3>
+        <div class='sideBySide'>
+          <div class='left'>
             <a href='WaterScarcity/' target='_blank'>
               <img alt='A website promoting water scarcity awareness' src='img/water-scarcity.jpg'>
             </a>
@@ -105,13 +153,13 @@
         </div>
         <div class='sideBySide'>
           <div class='left'>
+            <h3>RGBCubism</h3>
+            <p>RGBCubism is a response to Cubist landscape compositions made for my Advanced Open Studio course. I was tasked with combining both a classic and modern technique. I wrote a Proccessing sketch that uses OpenGL to render 3D cubes to create the different compositions and choose a color scheme for each image.</p>
+          </div>
+          <div class='right'>
             <a href='img/RGBCubism.jpg' target='_blank'>
               <img alt='RGBCubism series by Michael Wood' src='img/RGBCubism.jpg'>
             </a>
-          </div>
-          <div class='right'>
-            <h3>RGBCubism</h3>
-            <p>RGBCubism is a response to Cubist landscape compositions made for my Advanced Open Studio course. I was tasked with combining both a classic and modern technique. I wrote a Proccessing sketch that uses OpenGL to render 3D cubes to create the different compositions and choose a color scheme for each image.</p>
           </div>
         </div>
         <h3>Processing Visual Experiments</h3>
