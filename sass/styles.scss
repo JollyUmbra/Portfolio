@@ -184,7 +184,6 @@ header {
 
         p {
             text-align: left;
-            margin-bottom: 100px;
             font-size: 1.2em;
             clear: both;
         }
@@ -230,7 +229,7 @@ header {
             }
         }
 
-        .sideBySide.trim {
+        .sideBySide.trim, p.trim {
             margin-bottom: 0;
         }
 
